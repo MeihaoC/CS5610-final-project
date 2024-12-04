@@ -5,7 +5,7 @@ import "../css/ProductDetail.css";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate(); 
   const [product, setProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState("S");
   const [quantity, setQuantity] = useState(1);
@@ -46,7 +46,7 @@ const ProductDetail = () => {
   
       alert("Product added to cart!");
       console.log("Cart updated:", response.data);
-      navigate("/cart"); // Navigate to the shopping cart page
+      navigate("/cart"); 
     } catch (err) {
       console.error("Error adding to cart:", err);
       alert("Failed to add product to cart.");
