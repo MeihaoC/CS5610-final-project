@@ -43,9 +43,8 @@ exports.searchProducts = async (req, res) => {
       return res.status(400).send("Query parameter is required");
     }
 
-    // Search for products based on name, description, or other fields.
     const products = await Product.find({
-      name: { $regex: query, $options: "i" }, // Case-insensitive search
+      name: { $regex: query, $options: "i" }, 
     });
 
     res.json(products);
