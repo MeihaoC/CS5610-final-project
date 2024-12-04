@@ -2,7 +2,7 @@ const Product = require("../models/Product");
 
 exports.getAllProducts = async (req, res) => {
   try {
-    const { category, minPrice, maxPrice, color, size } = req.query;
+    const { category, minPrice, maxPrice, size } = req.query;
     const filter = {};
 
     if (category) {

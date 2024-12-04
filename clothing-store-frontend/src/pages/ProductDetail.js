@@ -5,7 +5,7 @@ import "../css/ProductDetail.css";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate(); 
   const [product, setProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState("S");
   const [quantity, setQuantity] = useState(1);
