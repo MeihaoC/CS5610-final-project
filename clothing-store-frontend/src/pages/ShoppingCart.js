@@ -6,7 +6,7 @@ import "../css/ShoppingCart.css";
 const ShoppingCart = () => {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
-  const [isUpdating, setIsUpdating] = useState(false); // To disable buttons during updates
+  const [isUpdating, setIsUpdating] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
