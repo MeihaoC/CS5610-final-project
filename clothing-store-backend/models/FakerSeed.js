@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { faker } = require("@faker-js/faker"); // Updated import
+const { faker } = require("@faker-js/faker");
 
 const Product = require("./Product");
 const User = require("./User");
@@ -20,7 +20,7 @@ const imageUrls = [
   ];
 
 const seedProducts = async (num) => {
-  const categories = ["Top", "Pants", "Dress"]; // Allowed categories
+  const categories = ["Top", "Pants", "Dress"];
   const categoryPrefixes = {
     Top: ["ActiveFit™", "PowerFlex™", "LuxeComfort™"],
     Pants: ["FlexWear™", "PerformanceGear™", "Athleisure™"],
@@ -37,18 +37,18 @@ const seedProducts = async (num) => {
 
   const products = [];
   for (let i = 0; i < num; i++) {
-    const category = faker.helpers.arrayElement(categories); // Randomly select a category
-    const prefix = faker.helpers.arrayElement(categoryPrefixes[category]); // Randomly select a prefix
-    const suffix = faker.helpers.arrayElement(categorySuffixes[category]); // Randomly select a suffix
-    const name = `${prefix} ${suffix}`; // Combine prefix and suffix to form the product name
+    const category = faker.helpers.arrayElement(categories);
+    const prefix = faker.helpers.arrayElement(categoryPrefixes[category]); 
+    const suffix = faker.helpers.arrayElement(categorySuffixes[category]);
+    const name = `${prefix} ${suffix}`;
     const imageUrl = faker.helpers.arrayElement(imageUrls);
 
     products.push({
-      name: name, // Assign the dynamically generated name
-      category: category, // Assign the selected category
-      price: parseFloat(faker.commerce.price({ min: 20, max: 150 })), // Generate a random price between 20 and 150
-      size: faker.helpers.arrayElement(sizes), // Generate a random size
-      description: faker.commerce.productDescription(), // Generate a random description
+      name: name,
+      category: category, 
+      price: parseFloat(faker.commerce.price({ min: 20, max: 150 })), 
+      size: faker.helpers.arrayElement(sizes),
+      description: faker.commerce.productDescription(),
       imageUrl,
     });
   }
