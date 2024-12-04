@@ -8,8 +8,8 @@ const orderSchema = new mongoose.Schema({
       quantity: { type: Number, required: true, min: 1 },
     },
   ],
-  totalAmount: { type: Number, required: true }, // Store the total amount in the selected currency
-  currency: { type: String, required: true }, // Store the selected currency (e.g., "CAD", "USD", etc.)
+  totalAmount: { type: Number, required: true }, 
+  currency: { type: String, required: true },
   shippingAddress: {
     userName: { type: String, required: true },
     streetAddress: { type: String, required: true },
