@@ -1,3 +1,4 @@
+/* General styles for the entire document */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Container for the user profile layout */
 .user-profile {
   display: flex;
   max-width: 1200px;
@@ -12,6 +14,7 @@ body {
   gap: 20px;
 }
 
+/* Sidebar section of the profile */
 .profile-sidebar {
   width: 30%;
   border: 1px solid #ddd;
@@ -20,11 +23,13 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Header section within the sidebar */
 .profile-header {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Styling for the user's avatar image */
 .profile-avatar img {
   width: 100px;
   height: 100px;
@@ -32,11 +37,13 @@ body {
   border: 2px solid #ddd;
 }
 
+/* Styling for the profile name in the header */
 .profile-header h3 {
   font-size: 1.5rem;
   margin: 10px 0;
 }
 
+/* Personal information section in the sidebar */
 .personal-info {
   margin-top: 20px;
 }
@@ -51,6 +58,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Main content area of the profile */
 .profile-content {
   flex: 1;
   border: 1px solid #ddd;
@@ -59,11 +67,13 @@ body {
   background-color: #fff;
 }
 
+/* Header for the main content area */
 .profile-content h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
+/* Individual order card within the main content area */
 .order-card {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -72,11 +82,13 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Text within each order card */
 .order-card p {
   margin: 5px 0;
   font-size: 0.9rem;
 }
 
+/* Bold text within order card paragraphs */
 .order-card p strong {
   font-weight: bold;
 }
