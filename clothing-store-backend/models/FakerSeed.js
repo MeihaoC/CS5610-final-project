@@ -33,7 +33,7 @@ const seedProducts = async (num) => {
     Dress: ["Maxi Dress", "Cocktail Dress", "Summer Dress"],
   };
 
-  const sizes = ["S", "M", "L", "XL"]; // Standard sizes
+  const sizes = ["S", "M", "L", "XL"];
 
   const products = [];
   for (let i = 0; i < num; i++) {
