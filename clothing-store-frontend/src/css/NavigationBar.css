@@ -14,7 +14,6 @@
   text-decoration: none;
 }
 
-/* Search form styles */
 .navbar-search {
   display: flex;
   align-items: center;
@@ -22,7 +21,7 @@
 }
 
 .search-input {
-  width: 250px; /* Increase this value to make the input longer */
+  width: 250px;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -37,7 +36,7 @@
 }
 
 .search-button .fa-search {
-  color: #333; /* Change this color to match your theme */
+  color: #333;
 }
 
 .navbar-links a {
